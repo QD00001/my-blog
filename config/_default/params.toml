@@ -10,16 +10,16 @@ favicon        = "img/favicon.png"
 SortBy              = "default"
 
 [footer]
-    since      = 2020
-    customText = ""
+    since      = 2026
+    customText = "祥辉的成长实验室"
 
 [dateFormat]
-    published   = ":date_full"
-    lastUpdated = ":date_full"
+    published   = "2006-01-02"
+    lastUpdated = "2006-01-02"
 
 [sidebar]
-    emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    emoji    = "🚀"
+    subtitle = "记录成长过程中的点点滴滴."
     avatar   = "img/avatar.png"
 
 [article]
