@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl      = "https://my-blog-ruddy-phi-92.vercel.app/"
+baseurl      = "https://QD00001.github.io/my-blog/"
 languageCode = "en-us"
 title        = "祥辉的成长空间"
 
