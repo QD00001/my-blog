@@ -1,20 +1,27 @@
 ---
-title: Hello World
-description: Welcome to Hugo Theme Stack
-slug: hello-world
-date: 2022-03-06 00:00:00+0000
-image: cover.jpg
+title: "我的个人成长博客开通啦！"
+description: "记录我利用 AI 辅助搭建博客的全过程"
+date: 2024-05-21
+image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e"
 categories:
-    - Example Category
+    - 个人成长
 tags:
-    - Example Tag
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+    - 学习
+    - 记录
 ---
 
-Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
+### 为什么我要开始写博客？
+为了记录学习过程，沉淀自己的思考。古人云：**“温故而知新”**，我希望通过文字输出，逼自己进行深度思考。
 
-For more information about this theme, check the documentation: https://stack.jimmycai.com/
+### 我的搭建历程
+虽然我不会写代码，但是在 AI 的引导下，我学会了：
+1. **GitHub**：管理我的文章源代码。
+2. **Hugo**：将文字转化成精美的网页。
+3. **GitHub Actions**：让网站自动发布到互联网。
 
-Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
+### 未来的计划
+- [ ] 每周至少记录一次学习心得。
+- [ ] 分享阅读笔记。
+- [ ] 记录技能成长的里程碑。
 
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+**这是我个人成长的第一步，加油！**
