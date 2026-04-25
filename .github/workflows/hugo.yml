@@ -2,13 +2,20 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["master"] # 如果你的主分支叫 main，请改为 main
-  workflow_dispatch:
+    branches: ["master"] # 根据你的截图，你使用的是 master 分支
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build:
@@ -17,17 +24,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.22.2'
+          submodules: recursive # 【重要】Stack 主题通常需要拉取子模块，必须设置为 recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
       - name: Setup Hugo
-        uses: actions/hugomods/setup@main
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.125.0'
-      - name: Build site
-        run: hugo --minify
+          hugo-version: 'latest'
+          extended: true # 【重要】Stack 主题必须开启 extended 模式
+
+      - name: Build with Hugo
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
