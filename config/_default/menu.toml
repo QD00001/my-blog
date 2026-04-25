@@ -1,24 +1,35 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# 左侧导航栏菜单
+[[main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+    params = { icon = "home" }
+
+[[main]]
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+    params = { icon = "archives" }
+
+[[main]]
+    name = "搜索"
+    url = "/search/"
+    weight = 3
+    params = { icon = "search" }
+
+[[main]]
+    name = "链接"
+    url = "/links/"
+    weight = 4
+    params = { icon = "link" }
+
+# 个人社交链接（头像下方的图标）
+[[social]]
+    name = "GitHub"
+    url = "https://github.com/qd00001"
+    params = { icon = "brand-github" }
 
 [[social]]
-    identifier = "github"
-    name       = "GitHub"
-    url        = "https://github.com/CaiJimmy/hugo-theme-stack"
-
-    [social.params]
-        icon = "brand-github"
-
-[[social]]
-    identifier = "twitter"
-    name       = "Twitter"
-    url        = "https://twitter.com"
-
-    [social.params]
-        icon = "brand-twitter"
+    name = "Twitter"
+    url = "https://twitter.com/"
+    params = { icon = "brand-twitter" }
