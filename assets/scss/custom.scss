@@ -1,3 +1,16 @@
 /*
     You can add your own custom styles here.
 */
+/* 1. 开启浏览器原生的平滑视图过渡（消除白屏闪烁，带来类似APP的丝滑切换） */
+@view-transition {
+    navigation: auto;
+}
+
+/* 2. 强制网页底层垫板颜色为深色（作为不支持上述特性浏览器的终极兜底） */
+html {
+    background-color: #161718; 
+}
+
+html[data-scheme="light"] {
+    background-color: #f3f4f6; 
+}
